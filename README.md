@@ -23,3 +23,9 @@
 * source .venv/bin/activate
 * pip install -r requirements.txt
 * python3 manage.py runserver
+
+
+## Arquitetura final do projeto
+
+![alt text](/home/fabricio/Documentos/APNPs/Projeto_Integrador/API_Imobiliaria/API_Imobiliaria/ImgReadme/Arquitetura.jpg)
+

@@ -5,6 +5,17 @@ from .serializers import UserSerializer, RegisterSerializer
 from django.contrib.auth import login
 from rest_framework.authtoken.serializers import AuthTokenSerializer
 from knox.views import LoginView as KnoxLoginView
+from django.contrib.auth.models import User
+from accounts.models import Profile
+from accounts.serializers import ProfileSerializer, ShowUserSerializer
+from rest_framework import viewsets
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
+from django.shortcuts import render, get_object_or_404
+from rest_framework.viewsets import ModelViewSet
+
+
+
 
 # Register API
 class RegisterAPI(generics.GenericAPIView):
@@ -29,3 +40,23 @@ class LoginAPI(KnoxLoginView):
         user = serializer.validated_data['user']
         login(request, user)
         return super(LoginAPI, self).post(request, format=None)
+
+
+class ShowUsers(generics.RetrieveAPIView):
+    #permission_classes = [AllowPostAnyReadAuthenticatedUser,]
+    queryset = User.objects.all()
+    serializer_class = ShowUserSerializer
+
+
+
+class ProfileViewSet(ModelViewSet):
+    queryset = Profile.objects.all()
+    serializer_class = ProfileSerializer
+    # permission_classes = [permissions.IsAuthenticated]
+
+
+
+# {
+# "username":"fabriciol",
+# "password" : "12345"
+# }

@@ -1,31 +1,28 @@
-# API_Imobiliaria
+<h1 align="center"> 
+   API Imobiliaria :house:
+</h1>
 
-## created login - ok
-## created register - ok
-## created logout - ok
+## :white_check_mark: Status do Projeto
+- Status: em desenvolvimento :construction:
 
-## create app compra x venda - not
+ ### :link: Tecnologias
 
-## create app aluguel - not
+![Python](https://img.shields.io/badge/Python-v3.9.0-blue) 
+![Django](https://img.shields.io/badge/Django-v3.1.2-blue) 
+![Django Rest Framework](https://img.shields.io/badge/DjangoRestFramework-v3.12.1-blue)
 
-## Como rodar o projeto
-* Clone esse repositório.
-* Vá até a API_Imobiliaria
-* Crie um virtualenv com Python 3.
-* Ative o virtualenv.
-* Instale todas dependências do arquivo requirements.txt
-* Inicializa o servidor local
 
-## Comandos
-* git clone git@github.com:fabriciocovalesci/API_Imobiliaria.git
-* cd API_Imobiliaria
-* python3 -m venv .venv
-* source .venv/bin/activate
-* pip install -r requirements.txt
-* python3 manage.py runserver
+
+### Features
+
+- [x] Criar login
+- [x] Cadastro de usuário
+- [ ] Cadastro de cliente
+- [ ] Cadastro de imóveis
+- [ ] Cadastro de Aluguéis
 
 
 ## Arquitetura final do projeto
 
-![alt text](/home/fabricio/Documentos/APNPs/Projeto_Integrador/API_Imobiliaria/API_Imobiliaria/ImgReadme/Arquitetura.jpg)
+![alt text](/home/fabricio/Documentos/APNPs/Projeto_Integrador/API_Imobiliaria/API_Imobiliaria/ImgReadme/Arquitetura-versao.jpg)
 

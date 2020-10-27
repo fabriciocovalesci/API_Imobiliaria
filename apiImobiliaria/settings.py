@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     
     'accounts',
     'address',
-    'aluguel',
+    'saleBuy',
     'compraVenda',
     'immobile',
 ]

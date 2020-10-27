@@ -1,5 +1,5 @@
 from django.db import models
-
+from address.models import AddressStreet
 class TypeImmobile(models.Model):
     typeIm = models.CharField(max_length=150,  null=True, blank=True)
 
@@ -10,6 +10,7 @@ class Immobile(models.Model):
     condominium = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     typeIm = models.ForeignKey(TypeImmobile, related_name='immobile', on_delete=models.CASCADE,  null=True, blank=True)
     photo = models.ImageField(upload_to='./photoImmobile/immobile')
-
+    address = models.ForeignKey(AddressStreet, on_delete=models.CASCADE)
+    
     def __str__(self):
         return self.title

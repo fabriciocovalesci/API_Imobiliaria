@@ -22,7 +22,7 @@ router.register(r'api/v1/address', AddressViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/', include('accounts.urls')),
+    path('', include('accounts.urls')),
     path('', include(router.urls)),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -18,17 +18,10 @@ class AddressNeighborhood(models.Model):
 
 
 class AddressStreet(models.Model):
-    street = models.CharField(max_length=100)
-    cep = models.CharField(max_length=12)
+    state = models.ForeignKey(AddresState,  on_delete=models.CASCADE)
+    city = models.ForeignKey(AddressCity, on_delete=models.CASCADE)
     neighborhood = models.ForeignKey(AddressNeighborhood, on_delete=models.CASCADE)
-
-
-
-class Address(models.Model):
-    state = models.CharField(max_length=2 , null=True, blank=True)
-    city = models.CharField(max_length=100 , null=True, blank=True)
-    neighborhood = models.CharField(max_length=100 , null=True, blank=True)
-    street = models.CharField(max_length=100 , null=True, blank=True)
+    street = models.CharField(max_length=150, null=True, blank=True)
     number = models.CharField(max_length=8, null=True, blank=True)
     cep = models.CharField(max_length=8, null=True, blank=True)
 

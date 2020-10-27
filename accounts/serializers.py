@@ -1,10 +1,9 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
-from drf_writable_nested import UniqueFieldsMixin , WritableNestedModelSerializer
+from drf_writable_nested.serializers import WritableNestedModelSerializer
 
 from accounts.models import Profile
-from address.api.serializers import AddressSerializer
-from address.models import Address
+from address.api.serializers import AddressStateSerializer
 
 # User Serializer
 class UserSerializer(serializers.ModelSerializer):
@@ -30,9 +29,9 @@ class ShowUserSerializer(serializers.ModelSerializer):
         fields = ('id', 'username', 'email')
 
 
-class ProfileSerializer(UniqueFieldsMixin , WritableNestedModelSerializer):
+class ProfileSerializer(WritableNestedModelSerializer):
 
-    address = AddressSerializer()
+    address = AddressStateSerializer()
     user = UserSerializer()
     class Meta:
         model = Profile

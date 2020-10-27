@@ -12,7 +12,6 @@ class TypeSerializers(serializers.ModelSerializer):
 
 class ImmobileSerializer(WritableNestedModelSerializer):
 
-    
     class Meta:
         depth = 1
         fields = ['id', 'title', 'description', 'condominium', 'typeIm', 'photo', 'address' ]

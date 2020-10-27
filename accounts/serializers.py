@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from drf_writable_nested.serializers import WritableNestedModelSerializer
 
 from accounts.models import Profile
-from address.api.serializers import AddressStateSerializer
+from address.api.serializers import AddressStreetSerializer
 
 # User Serializer
 class UserSerializer(serializers.ModelSerializer):
@@ -31,8 +31,8 @@ class ShowUserSerializer(serializers.ModelSerializer):
 
 class ProfileSerializer(WritableNestedModelSerializer):
 
-    address = AddressStateSerializer()
-    user = UserSerializer()
+    address = AddressStreetSerializer
+    user = UserSerializer
     class Meta:
         model = Profile
         fields = ('id',  'cpf', 'account', 'cellphone', 'address', 'user')

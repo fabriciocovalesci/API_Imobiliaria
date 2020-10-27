@@ -10,7 +10,7 @@ class Profile(models.Model):
     cpf = CPFField('cpf')
     account = models.CharField(max_length=100, null=True, blank=True)
     cellphone = models.CharField(max_length=12, null=True, blank=True)
-    address = models.ForeignKey(AddressStreet, on_delete=models.CASCADE, related_name='profile')
+    address = models.ForeignKey(AddressStreet, on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = u'pessoa'

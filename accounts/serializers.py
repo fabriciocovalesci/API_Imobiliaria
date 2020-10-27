@@ -31,7 +31,7 @@ class ShowUserSerializer(serializers.ModelSerializer):
 
 class ProfileSerializer(WritableNestedModelSerializer):
 
-    address = AddressStreetSerializer
+    address = AddressStreetSerializer()
     user = UserSerializer
     class Meta:
         model = Profile

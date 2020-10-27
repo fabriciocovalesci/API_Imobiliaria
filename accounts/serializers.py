@@ -1,5 +1,7 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
+from drf_writable_nested import UniqueFieldsMixin , WritableNestedModelSerializer
+
 from accounts.models import Profile
 from address.api.serializers import AddressSerializer
 from address.models import Address
@@ -28,7 +30,7 @@ class ShowUserSerializer(serializers.ModelSerializer):
         fields = ('id', 'username', 'email')
 
 
-class ProfileSerializer(serializers.ModelSerializer):
+class ProfileSerializer(UniqueFieldsMixin , WritableNestedModelSerializer):
 
     address = AddressSerializer()
     user = UserSerializer()
@@ -36,17 +38,6 @@ class ProfileSerializer(serializers.ModelSerializer):
         model = Profile
         fields = ('id',  'cpf', 'account', 'cellphone', 'address', 'user')
 
-
-    def create(self, validated_data):
-        addres = Address.objects.get(pk=validated_data.pop('address_id')).get('id')
-        instance = Profile.objects.create(**validated_data)
-        User.objects.create(Address=addres, Profile=instance)
-        return instance
-
-    # def to_representation(self, instance):
-    #     representation = super(EquipmentSerializer, self).to_representation(instance)
-    #     representation['assigment'] = AssignmentSerializer(instance.assigment_set.all(), many=True).data
-    #     return representation
 
 
 

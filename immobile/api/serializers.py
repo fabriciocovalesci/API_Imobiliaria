@@ -9,7 +9,7 @@ class TypeSerializers(serializers.ModelSerializer):
 
 class ImmobileSerializer(serializers.ModelSerializer):
 
-    typeIm = TypeSerializers(many=True, read_only=True)
+    typeIm = TypeSerializers()
     
     class Meta:
         model = Immobile

@@ -137,7 +137,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = '/home/fabricio/Documentos/APNPs/Projeto_Integrador/API_Imobiliaria/API_Imobiliaria/'
+MEDIA_ROOT = '/home/fabricio/Documentos/APNPs/Projeto_Integrador/API'
 
 MEDIA_URL = '/media/'
 

@@ -9,11 +9,11 @@ from rest_framework import serializers
 
 class SaleBuySerializers(ModelSerializer):
 
-    client = ProfileSerializer
+    client = ProfileSerializer()
 
-    salesman = ProfileSerializer
+    salesman = ProfileSerializer()
 
-    immobile = ImmobileSerializer
+    immobile = ImmobileSerializer()
 
     class Meta:
         model = SaleBuy

@@ -51,7 +51,6 @@ INSTALLED_APPS = [
     'accounts',
     'address',
     'saleBuy',
-    'compraVenda',
     'immobile',
 ]
 

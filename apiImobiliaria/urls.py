@@ -5,16 +5,14 @@ from django.urls import path, include
 from rest_framework import routers
 
 
-from compraVenda.api.viewset import UsuarioViewSet
 from immobile.api.viewset import ImmobileViewSet, TypeViewSet
 from address.api.viewSet import AddressViewSet
-from accounts.views import ProfileViewSet
 from accounts.views import RegisterAPI, LoginAPI, ShowUsers, ProfileViewSet
 from saleBuy.api.viewset import SaleBuyViewSet
 
 
 router = routers.DefaultRouter()
-router.register(r'api/v1/usuario', ProfileViewSet)
+router.register(r'api/v1/profile', ProfileViewSet)
 router.register(r'api/v1/address', AddressViewSet)
 router.register(r'api/v1/immobiletype', TypeViewSet)
 router.register(r'api/v1/immobile', ImmobileViewSet)

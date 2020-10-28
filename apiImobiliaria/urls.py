@@ -9,6 +9,7 @@ from immobile.api.viewset import ImmobileViewSet, TypeViewSet
 from address.api.viewSet import AddressViewSet
 from accounts.views import RegisterAPI, LoginAPI, ShowUsers, ProfileViewSet
 from saleBuy.api.viewset import SaleBuyViewSet
+from lease.api.viewset import LeaseViewSet
 
 
 router = routers.DefaultRouter()
@@ -17,6 +18,8 @@ router.register(r'api/v1/address', AddressViewSet)
 router.register(r'api/v1/immobiletype', TypeViewSet)
 router.register(r'api/v1/immobile', ImmobileViewSet)
 router.register(r'api/v1/saleBuy', SaleBuyViewSet)
+router.register(r'api/v1/lease', LeaseViewSet)
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),

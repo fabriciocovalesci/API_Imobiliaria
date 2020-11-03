@@ -34,15 +34,15 @@
 
 ### Features
 
-:white_check_mark: OK
-:heavy_exclamation_mark: Em análise
+:white_check_mark: OK <br>
+:heavy_exclamation_mark: Em análise <br>
 
-:white_check_mark: Register / Login
-:white_check_mark: Profile user
-:white_check_mark: Property registration for sale
-:white_check_mark: Rental property registration
-:white_check_mark: Add permissions
-:heavy_exclamation_mark: Review script
+:white_check_mark: Register / Login  <br>
+:white_check_mark: Profile user  <br>
+:white_check_mark: Property registration for sale  <br>
+:white_check_mark: Rental property registration  <br>
+:white_check_mark: Add permissions  <br>
+:heavy_exclamation_mark: Review script  <br>
 
 
 
@@ -51,9 +51,9 @@
 Este projeto tem como finalizade expor uma API de uma imobiliaria, onde um usuario pode criar um perfil,
 logar no sistema e adicionar um ou mais imoveis. Para locação, venda ou comprar um imóvel.
 
-Na segunda parte do projeto será desenvolvido um *smart contract* na *linguagem Solidity*, utilizaremos a *rede Ethereum* como *Blockchain*, esta API, irá fornecer os dados. 
+Na segunda parte do projeto será desenvolvido um *smart contract* na **linguagem Solidity**, utilizaremos a **rede Ethereum** como **Blockchain**, esta API, irá fornecer os dados. 
 
-Será utilizado um *oráculo* da *ChainLink*, para fazer a comunicação entre a API e o smart contract.
+Será utilizado um *oráculo* da **ChainLink**, para fazer a comunicação entre a API e o smart contract.
 
 
 ![alt text](/home/fabricio/Documentos/APNPs/Projeto_Integrador/API_Imobiliaria/API_Imobiliaria/ImgReadme/Arquitetura-versao.jpg)

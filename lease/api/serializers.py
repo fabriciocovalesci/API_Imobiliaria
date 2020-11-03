@@ -4,7 +4,7 @@ from rest_framework import serializers
 
 from lease.models import Lease
 from address.models import  AddressStreet
-from accounts.serializers import ProfileSerializer
+from accounts.api.serializers import ProfileSerializer
 from immobile.api.serializers import ImmobileSerializer 
 
 

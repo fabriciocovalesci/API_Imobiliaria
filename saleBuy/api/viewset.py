@@ -1,7 +1,9 @@
 from rest_framework.viewsets import ModelViewSet
+from rest_framework import permissions
 
 from saleBuy.models import SaleBuy
 from saleBuy.api.serializers import SaleBuySerializers
+
 
 
 class SaleBuyViewSet(ModelViewSet):
@@ -10,3 +12,4 @@ class SaleBuyViewSet(ModelViewSet):
     """
     queryset = SaleBuy.objects.all()
     serializer_class = SaleBuySerializers
+    permission_classes = [permissions.IsAuthenticated]

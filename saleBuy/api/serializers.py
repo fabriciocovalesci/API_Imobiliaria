@@ -1,7 +1,7 @@
 from saleBuy.models import SaleBuy
 from rest_framework.serializers import ModelSerializer, HyperlinkedModelSerializer
 from address.models import  AddressStreet
-from accounts.serializers import ProfileSerializer
+from accounts.api.serializers import ProfileSerializer
 from immobile.api.serializers import ImmobileSerializer 
 
 from drf_writable_nested import WritableNestedModelSerializer

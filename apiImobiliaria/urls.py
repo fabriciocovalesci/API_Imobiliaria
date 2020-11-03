@@ -7,7 +7,7 @@ from rest_framework import routers
 
 from immobile.api.viewset import ImmobileViewSet, TypeViewSet
 from address.api.viewSet import AddressViewSet
-from accounts.views import RegisterAPI, LoginAPI, ShowUsers, ProfileViewSet
+from accounts.api.viewSet import RegisterAPI, LoginAPI, ShowUsers, ProfileViewSet
 from saleBuy.api.viewset import SaleBuyViewSet
 from lease.api.viewset import LeaseViewSet
 

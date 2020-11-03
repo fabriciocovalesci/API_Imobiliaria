@@ -56,5 +56,5 @@ Na segunda parte do projeto será desenvolvido um *smart contract* na **linguage
 Será utilizado um *oráculo* da **ChainLink**, para fazer a comunicação entre a API e o smart contract.
 
 
-![alt text](/home/fabricio/Documentos/APNPs/Projeto_Integrador/API_Imobiliaria/API_Imobiliaria/ImgReadme/Arquitetura-versao.jpg)
+![Arquitetura-versao](https://user-images.githubusercontent.com/40548641/97950272-1ecc0b80-1d75-11eb-9f9b-22df00c50ab1.jpg)
 

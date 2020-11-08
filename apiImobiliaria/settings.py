@@ -7,6 +7,16 @@ from dj_database_url import parse as db_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+############## Config Local ##############################
+
+#PARA LOCAL DESCOMENTAR
+
+# DEBUG = True
+# SECRET_KEY = '+_a2n_v=3!(p!3m(n48pem)w&v2w=bzpgtu#b8-3@7#t(s3$om'
+
+#########################################################
+
+
 
 ############ Config Deploy ################################
 

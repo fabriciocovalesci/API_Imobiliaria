@@ -42,7 +42,12 @@
 :white_check_mark: Property registration for sale  <br>
 :white_check_mark: Rental property registration  <br>
 :white_check_mark: Add permissions  <br>
+:white_check_mark: Deploy Heroku  <br>
 :heavy_exclamation_mark: Review script  <br>
+
+
+
+## Link deploy ![depoly-heroku](https://apimobiliaria.herokuapp.com/)
 
 
 

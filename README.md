@@ -47,7 +47,7 @@
 
 
 
-## Link deploy ![depoly-heroku](https://apimobiliaria.herokuapp.com/)
+## Link deploy [deploy-heroku](https://apimobiliaria.herokuapp.com/)
 
 
 

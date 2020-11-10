@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'rest_auth',
     'rest_auth.registration',
     'django.contrib.sites',
+    'corsheaders',
     
     'accounts',
     'address',
@@ -66,6 +67,7 @@ SITE_ID=1
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -164,3 +166,5 @@ REST_FRAMEWORK = {
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+# aceita todos requests
+CORS_ALLOW_ALL_ORIGINS = True

@@ -146,6 +146,7 @@ USE_L10N = True
 USE_TZ = True
 
 
+
 # Arquivos  estaticos
 STATIC_URL = '/static/'
 

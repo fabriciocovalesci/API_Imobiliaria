@@ -50,17 +50,6 @@
 ## Link deploy [deploy-heroku](https://apimobiliaria.herokuapp.com/)
 
 
-
-## Arquitetura final do projeto
-
-Este projeto tem como finalizade expor uma API de uma imobiliaria, onde um usuário pode criar um perfil,
-logar no sistema e adicionar um ou mais imoveis. Para locação, venda ou comprar um imóvel.
-
-Foi desenvolvido um **Front end** para consumir os dados desta API, o repositório pode ser acessado neste link. [Front end](https://github.com/fabriciocovalesci/Imobiliaria-frontend-Svelte).
-
-O checkout da transação na compra do imovel ou aluguel, é gravado em num blockchain de desenvolvimento, para emular este blockchain local, foi utilizado o [Ganache](https://www.trufflesuite.com/ganache). Foi desenvolvido um *smart contract* na **linguagem Solidity**, com toda lógica da regra do negócio.
-
-
 ## Como rodar este projeto
 
 - OBS: Comandos para instalação no Linux, é necessário ter o [virtualenv](https://docs.python.org/3/tutorial/venv.html) instalado e configurado.
@@ -75,4 +64,17 @@ O checkout da transação na compra do imovel ou aluguel, é gravado em num bloc
 |  Rodar as migrações do BD            |  `python manage.py migrate`                                            |   
 |  Subir o servidor python             |  `python manage.py runserver`                                          |
 |                                      |                                                                        | 
+
+
+## Arquitetura final do projeto
+
+Este projeto tem como finalizade expor uma API de uma imobiliaria, onde um usuário pode criar um perfil,
+logar no sistema e adicionar um ou mais imoveis. Para locação, venda ou comprar um imóvel.
+
+Foi desenvolvido um **Front end** para consumir os dados desta API, o repositório pode ser acessado neste link. [Front end](https://github.com/fabriciocovalesci/Imobiliaria-frontend-Svelte).
+
+O checkout da transação na compra do imovel ou aluguel, é gravado em num blockchain de desenvolvimento, para emular este blockchain local, foi utilizado o [Ganache](https://www.trufflesuite.com/ganache). Foi desenvolvido um *smart contract* na **linguagem Solidity**, com toda lógica da regra do negócio.
+
+
+![Arquitetura](https://user-images.githubusercontent.com/40548641/101282526-829e8580-37b4-11eb-8535-00bd85214344.png)
 

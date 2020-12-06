@@ -63,6 +63,8 @@ O checkout da transação na compra do imovel ou aluguel, é gravado em num bloc
 
 ## Como rodar este projeto
 
+- OBS: Comandos para instalação no Linux, é necessário ter o [virtualenv](https://docs.python.org/3/tutorial/venv.html) instalado e configurado.
+
 |           Descrição                  |                          COMANDOS                                      |  
 |--------------------------------------|------------------------------------------------------------------------|
 |  Clonar o repositório                |  `git clone git@github.com:fabriciocovalesci/API_Imobiliaria.git`      |   
@@ -70,7 +72,6 @@ O checkout da transação na compra do imovel ou aluguel, é gravado em num bloc
 |  Criar um virtualenv python          |  `python -m venv virtualenv`                                           |   
 |  Ativar o virtualenv                 |  `source virtualenv/bin/activate`                                      |   
 |  Instalar as dependências do projeto |  `pip install -r requirements.txt`                                     |  
-|  Instalar as dependências do projeto |  `pip install -r requirements.txt`                                     |
 |  Rodar as migrações do BD            |  `python manage.py migrate`                                            |   
 |  Subir o servidor python             |  `python manage.py runserver`                                          |
 |                                      |                                                                        | 

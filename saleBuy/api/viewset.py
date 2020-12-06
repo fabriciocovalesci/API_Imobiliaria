@@ -12,4 +12,4 @@ class SaleBuyViewSet(ModelViewSet):
     """
     queryset = SaleBuy.objects.all()
     serializer_class = SaleBuySerializers
-    permission_classes = [permissions.IsAuthenticated]
+   # permission_classes = [permissions.IsAuthenticated]

@@ -11,8 +11,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 #PARA LOCAL DESCOMENTAR
 
-# DEBUG = True
-# SECRET_KEY = '+_a2n_v=3!(p!3m(n48pem)w&v2w=bzpgtu#b8-3@7#t(s3$om'
+DEBUG = True
+SECRET_KEY = '+_a2n_v=3!(p!3m(n48pem)w&v2w=bzpgtu#b8-3@7#t(s3$om'
 
 #########################################################
 
@@ -20,11 +20,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 ############ Config Deploy ################################
 
-SECRET_KEY = config('SECRET_KEY')
-# # SECURITY WARNING: don't run with debug turned on in production!
+# SECRET_KEY = config('SECRET_KEY')
+# # # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = config('DEBUG', default=False, cast=bool)
-ALLOWED_HOSTS = ['*']
+# DEBUG = config('DEBUG', default=False, cast=bool)
+# ALLOWED_HOSTS = ['*']
 
 # .env -> ALLOWED_HOSTS=127.0.0.1,localhost,.herokuapp.com
 

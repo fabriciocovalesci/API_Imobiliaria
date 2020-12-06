@@ -12,4 +12,4 @@ class LeaseViewSet(ModelViewSet):
     """
     queryset = Lease.objects.all()
     serializer_class = LeaseSerializers
-    permission_classes = [permissions.IsAuthenticated]
+    #permission_classes = [permissions.IsAuthenticated]

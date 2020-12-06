@@ -10,4 +10,4 @@ class AddressViewSet(viewsets.ModelViewSet):
     """
     queryset = AddressStreet.objects.all()
     serializer_class = AddressStreetSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    #permission_classes = [permissions.IsAuthenticated]

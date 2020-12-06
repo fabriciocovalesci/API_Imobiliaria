@@ -8,7 +8,7 @@ from immobile.api.serializers import ImmobileSerializer, TypeSerializers
 class TypeViewSet(ModelViewSet):
     queryset = TypeImmobile.objects.all()
     serializer_class = TypeSerializers
-    permission_classes = [permissions.IsAuthenticated]
+   # permission_classes = [permissions.IsAuthenticated]
 
 class ImmobileViewSet(ModelViewSet):
     """
@@ -16,4 +16,4 @@ class ImmobileViewSet(ModelViewSet):
     """
     queryset = Immobile.objects.all()
     serializer_class = ImmobileSerializer
-    permission_classes = [permissions.IsAuthenticated]
+   # permission_classes = [permissions.IsAuthenticated]

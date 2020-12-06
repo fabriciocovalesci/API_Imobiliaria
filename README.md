@@ -53,13 +53,9 @@
 
 ## Arquitetura final do projeto
 
-Este projeto tem como finalizade expor uma API de uma imobiliaria, onde um usuario pode criar um perfil,
+Este projeto tem como finalizade expor uma API de uma imobiliaria, onde um usuário pode criar um perfil,
 logar no sistema e adicionar um ou mais imoveis. Para locação, venda ou comprar um imóvel.
 
-Na segunda parte do projeto será desenvolvido um *smart contract* na **linguagem Solidity**, utilizaremos a **rede Ethereum** como **Blockchain**, esta API, irá fornecer os dados. 
+Foi desenvolvido um **Front end** para consumir os dados desta API, o repositório pode ser acessado neste link. [Front end](https://github.com/fabriciocovalesci/Imobiliaria-frontend-Svelte).
 
-Será utilizado um *oráculo* da **ChainLink**, para fazer a comunicação entre a API e o smart contract.
-
-
-![Arquitetura-versao](https://user-images.githubusercontent.com/40548641/97950272-1ecc0b80-1d75-11eb-9f9b-22df00c50ab1.jpg)
-
+O checkout da transação na compra do imovel ou aluguel, é gravado em num blockchain de desenvolvimento, para emular este blockchain local, foi utilizado o [Ganache](https://www.trufflesuite.com/ganache). Foi desenvolvido um *smart contract* na **linguagem Solidity**, com toda lógica da regra do negócio.

@@ -14,7 +14,7 @@ class ImmobileSerializer(WritableNestedModelSerializer):
 
     class Meta:
         depth = 1
-        fields = ['id', 'title', 'description', 'amount', 'condominium', 'typeIm', 'photo', 'address' ]
+        fields = ['id', 'title', 'description', 'amount', 'value_aluguel' , 'condominium', 'typeIm', 'photo', 'address' ]
         model = Immobile
     
     typeIm = TypeSerializers()

@@ -8,6 +8,7 @@ class Immobile(models.Model):
     title = models.CharField(max_length=100, null=True, blank=True)
     description = models.TextField(null=True, blank=True)
     amount = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
+    value_aluguel = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
     condominium = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
     typeIm = models.ForeignKey(TypeImmobile, related_name='immobile', on_delete=models.CASCADE,  null=True, blank=True)
     photo = models.ImageField(upload_to='photoImmobile')

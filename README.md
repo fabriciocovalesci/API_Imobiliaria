@@ -73,7 +73,7 @@ logar no sistema e adicionar um ou mais imoveis. Para locação, venda ou compra
 
 Foi desenvolvido um **Front end** para consumir os dados desta API, o repositório pode ser acessado neste link. [Front end](https://github.com/fabriciocovalesci/Imobiliaria-frontend-Svelte).
 
-O checkout da transação na compra do imovel ou aluguel, é gravado em num blockchain de desenvolvimento, para emular este blockchain local, foi utilizado o [Ganache](https://www.trufflesuite.com/ganache). Foi desenvolvido um *smart contract* na **linguagem Solidity**, com toda lógica da regra do negócio.
+O checkout da transação na compra do imovel ou aluguel, é gravado em num blockchain de desenvolvimento, para emular este blockchain local, foi utilizado o [Ganache](https://www.trufflesuite.com/ganache). Foi desenvolvido um *smart contract* na **linguagem Solidity**, com toda lógica da regra do negócio, este projeto pode ser acessado atravez deste [Link](https://github.com/fabriciocovalesci/Smart_Contract_Imobiliaria).
 
 
 ![Arquitetura](https://user-images.githubusercontent.com/40548641/101282526-829e8580-37b4-11eb-8535-00bd85214344.png)
